@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Monthsary</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-image: url('path_to_your_paradise_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .header-container {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            align-items: center;
+            position: relative;
+            text-align: center;
+            margin-top: 40px; /* Space between title and header */
+        }
+        h1 {
+            font-size: 3.5em;
+            color: #ff007f;
+            text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.7);
+            margin: 20px 0;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1; /* Allow h1 to take available space */
+        }
+        .arrow-text {
+            font-size: 0.8em;
+            color: #ff0066;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-right: 5px; /* Reduced spacing between arrow and heart button */
+        }
+        .arrow-text::after {
+            content: '→';
+            margin-left: 5px; /* Reduced spacing to get close to the heart button */
+            font-size: 0.8em;
+            color: #ff0066;
+        }
+        .smiley {
+            margin-left: 5px;
+            font-size: 1.0em;
+        }
+        .heart-button {
+            font-size: 1.2em; /* Make the heart bigger */
+            color: #ff0066;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            margin-left: 5px; /* Reduced margin for the heart button */
+        }
+        .content {
+            background-color: rgba(240, 255, 240, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #ff007f;
+            margin-bottom: 5px;
+        }
+        .name {
+            color: #C71585;
+            margin-top: 0;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .signature {
+            color: #C71585;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        p {
+            color: #005700;
+            margin-top: 15px;
+        }
+        .closing {
+            font-size: 1.5em;
+            color: #005700;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        figure {
+            margin: 0;
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            border: 2px solid rgba(34, 139, 34, 0.8);
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgba(240, 255, 240, 0.7);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border: 1px solid rgba(200, 200, 200, 0.5);
+            border-radius: 3px;
+        }
+        figcaption {
+            font-style: normal;
+            color: #005700;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        /* Hide only the extra audio element */
+        #extra-audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <!-- Add a title at the top of the content section -->
+        <h1>Happy 1st Monthsary</h1>
+
+        <!-- Header with arrow text, smiley face, and heart button on the right -->
+        <div class="header-container">
+            <!-- Arrow text with smiley -->
+            <div class="arrow-text">Click this
+                <span class="smiley">😊</span>
+            </div>
+            <!-- Heart button right beside the arrow text -->
+            <button class="heart-button" onclick="playAudio()">❤️</button>
+        </div>
+
+        <h3>My Dearest Palanga,</h3>
+        <h2 class="name">💚Marie Christine Jane Chidrome💚</h2>
+
+        <p>Ga, distance may keep us apart, but not a single thought of you will ever leave my mind. I know I'm not perfect. I make mistakes, I fall short, and I sometimes stumble along the way. I’m especially sorry for being sensitive at times. I know it can be frustrating, and I’m working on it. I’m trying to be more understanding and less reactive.</p>
+        
+        <p>I want to be the kind of partner who listens, who communicates openly, and who doesn’t let little things ruin our day. What I do know is that I love you with all my heart, and I'm committed to being the best partner I can be for you, Ga.</p>
+
+        <figure>
+            <img src="MA.jpeg" alt="💚My beautiful girlfriend💚" >
+            <figcaption>💚My beautiful girlfriend💚</figcaption>
+        </figure>
+
+        <p>I'm willing to grow, to learn, and to change for the better. I’m eager to listen to your needs, to understand your feelings, and to support you in every way possible. I promise to be patient, kind, and understanding, even when things get tough.</p>
+
+        <figure>
+            <img src="beautiful.jpeg" alt="smile.">
+            <figcaption>My favourite smile is yours💚</figcaption>
+        </figure>
+
+        <p>I’m grateful for the opportunity to love and be loved by you. As we continue this journey, I’ll strive to make you happy, to make you smile, and to make you feel loved every single day.</p>
+
+        <!-- Background audio element (visible and autoplay) -->
+        <audio id="background-audio" autoplay controls>
+            <source src="cover.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <!-- Extra hidden audio element for heart button -->
+        <audio id="extra-audio" src="final.mp3"></audio>
+
+        <p class="closing"><strong>Your palanga nga badlungon,</strong></p>
+        <p class="signature">Martin H.</p>
+    </div>
+
+    <script>
+        // Set the background audio volume to a lower level (0.05)
+        const backgroundAudio = document.getElementById('background-audio');
+        backgroundAudio.volume = 0.08; // Lower volume for background audio
+
+        // Function to play the hidden audio when heart button is clicked
+        function playAudio() {
+            const extraAudio = document.getElementById('extra-audio');
+
+            // Play the background audio and extra audio when the heart button is clicked
+            backgroundAudio.play();
+            extraAudio.play();
+
+            // Set the volume for the extra audio (louder than background audio)
+            extraAudio.volume = 2; // Full volume for extra audio
+
+            // Set the event listener for when the extra audio finishes
+            extraAudio.onended = function() {
+                // Set the background audio volume to 0.7 after final.mp3 is finished
+                backgroundAudio.volume = 0.7;
+            };
+        }
+    </script>
+
+</body>
+</html>
